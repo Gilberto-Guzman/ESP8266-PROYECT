@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_light"
+        android:icon="@drawable/ic_light_bulb"
+        android:title="@string/title_light" />
+
+    <item
+        android:id="@+id/navigation_temperature"
+        android:icon="@drawable/ic_temperature"
+        android:title="@string/title_temperature" />
+
+    <item
+        android:id="@+id/navigation_humidity"
+        android:icon="@drawable/ic_humidity"
+        android:title="@string/title_humidity" />
+
+    <item
+        android:id="@+id/navigation_fan"
+        android:icon="@drawable/ic_fan"
+        android:title="@string/title_fan" />
+
+</menu>

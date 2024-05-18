@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" >ESP8266 APP</string>
+    <string name="title_all_activity">ESP8266 APP</string>
+    <string name="sub_title_fragment_light">Lampara LED</string>
+    <string name="Bright">Brillo</string>
+    <string name="precent">0%</string>
+    <string name="sub_title_fragment_humidity">Sensor De Humedad</string>
+    <string name="sub_title_fragment_temperature">Sensor De Temperatura</string>
+    <string name="value">0 C°</string>
+    <string name="sub_title_fan">Ventilador</string>
+    <string name="speed">Velocidad</string>
+    <string name="all">TODO</string>
+
+    <string name="title_light"></string>
+    <string name="title_temperature"></string>
+    <string name="title_humidity"></string>
+    <string name="title_fan"></string>
+
+</resources>

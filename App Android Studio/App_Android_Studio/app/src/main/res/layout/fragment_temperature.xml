@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_all_activity"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub_title_fragment_temperature"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/temperatureGauge"
+        app:layout_constraintEnd_toEndOf="@+id/temperatureGauge"
+        app:layout_constraintStart_toStartOf="@+id/temperatureGauge"
+        app:layout_constraintTop_toTopOf="@+id/temperatureGauge">
+
+        <ImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_circle_red"
+            android:padding="32dp"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/all" />
+
+        <ImageView
+            android:id="@+id/iconImageVIew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circleImageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="57dp"
+            android:contentDescription="@string/all"
+            android:padding="56dp"
+            app:srcCompat="@drawable/ic_celsius"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <pl.pawelkleczkowski.customgauge.CustomGauge
+        android:id="@+id/temperatureGauge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:gaugeEndValue="40"
+        app:gaugePointEndColor="#c21531"
+        app:gaugePointStartColor="#15caca"
+        app:gaugeStartAngle="90"
+        app:gaugeStartValue="0"
+        app:gaugeStrokeCap="BUTT"
+        app:gaugeStrokeColor="#e3e6ee"
+        app:gaugeStrokeWidth="2dp"
+        app:gaugeSweepAngle="360"
+        app:gaugeDividerDrawFirst="false"
+        app:gaugeDividerDrawLast="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="#979ba5"
+            android:gravity="center"
+            android:text="@string/value" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
